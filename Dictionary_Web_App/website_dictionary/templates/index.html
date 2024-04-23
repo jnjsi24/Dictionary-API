@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Major+Mono+Display&family=Pacifico&family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+    <style>
+        body {
+            background-image: url('{% static "home/images/bgg.jpeg" %}');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center center; /* Center the background image both vertically and horizontally */
+            background-attachment: fixed; /* Ensures the background image remains fixed in the viewport */
+        }
+    </style>
+    <title>Dictionary</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo-container">
+                <div class="overlay-image"></div>
+                <div class="logo">ENGLISH DICTIONARY</div>
+            </div>
+            <div class="nav-items">
+                <a href="/">Definitions</a>
+                <a href="/">Synonyms</a>
+                <a href="/">Antonyms</a>
+                <a href="/">Examples</a>
+            </div>
+        </nav>
+        <audio id="sound"></audio>
+        <div class="search-box">
+            <input type="text" placeholder="Type the word here.." id="inp-word" />
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="word-of-the-day" id="word-of-the-day">
+            <h2></h2>
+            <!-- Updated Structure -->
+            <div class="definition">
+                <h2 class="word-of-the-day-title"></h2>
+                <div class="details">
+                </div>
+            </div>
+
+            <div class="examples">
+                <h2 class="word-of-the-day-title"></h2>
+                <div class="details">
+                </div>
+            </div>
+
+            <div class="synonyms">
+                <h2 class="word-of-the-day-title"></h2>
+                <div class="details">
+                </div>
+            </div>
+
+            <div class="antonyms">
+                <h2 class="word-of-the-day-title"></h2>
+                <div class="details">
+                </div>
+            </div>
+        </div>
+        <div class="result" id="result"></div>
+        <!-- New section for recently searched words -->
+        <div class="recent-searched-words">
+            <h2>Frequently Searched Words:</h2>
+            <div id="recent-words-container"></div>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="{% static 'home/js/script.js' %}"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>
+                <span class="coded-by">Coded By: </span>
+                <span class="me">
+                    Dequina, Dominic <br>
+                    Enriquez, Nico Faith <br>
+                    Jusi, Jairhon <br>
+                    Quiñanola, Leamei <br>
+                    Villaflor, Akimarie 
+                </span>
+                <br>
+                <span class="SIA">Systems Integration and Architecture</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

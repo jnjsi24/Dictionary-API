@@ -1,0 +1,346 @@
+/* Add this CSS rule to change the color of the play sound button */
+/* Change color of play sound button */
+.result button i {
+    color: #ff6666; /* Change the color to your desired color */
+}
+
+/* You can adjust other styles of the button as needed */
+.result button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+* {
+    padding: 120;
+    margin: 120;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #f6f5f9e7;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fully transparent background */
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 800px; /* Set a maximum width if needed */
+    margin: 100px auto 100px; /* Center the container horizontally and add margin to the top and bottom */
+    padding: 20px; /* Reduced padding to prevent overflow */
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgb(230, 154, 3);
+    backdrop-filter: blur(5px); /* Adjust the blur intensity as needed */
+    overflow: auto; /* Enable scrolling when content exceeds container dimensions */
+}
+
+.search-box button {
+    font-family: 'EB Garamond', serif; /* Change font family */
+    /* Add other styling properties as needed */
+}
+
+
+
+
+
+
+
+
+.search-box button {
+    font-family: 'EB Garamond', serif; /* Change font family to EB Garamond */
+    /* Add any other styles you want to apply */
+}
+
+#inp-word {
+    font-family: 'Georgia', serif;
+}
+
+.search-box input {
+    padding: 5px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #faecb4;
+    font-size: 16px;
+}
+.search-box button {
+    padding: 15px 0;
+    width: 25%;
+    background-color: #beb383;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.result {
+    position: relative;
+}
+.result h3 {
+    font-size: 30px;
+    color: #1f194c;
+}
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.result button {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+.word-meaning {
+    color: #575a7b;
+}
+.word-example {
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid #f5f4fa;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+.error {
+    margin-top: 80px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    margin-top: 20px;
+
+    
+}
+
+.nav-items a {
+    text-align: right;
+    font-size: 18px;
+    color: transparent;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #bb3d21, #ff6666);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-style: italic;
+    text-decoration: none;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Add this CSS to your existing stylesheet or style section */
+.definition p strong,
+.examples p strong,
+.synonyms p strong,
+.antonyms p strong {
+    font-weight: bold; /* Make the labels bold */
+}
+
+.definition p,
+.examples p,
+.synonyms p,
+.antonyms p {
+    font-family: 'Georgia', serif; /* Example of an old-styled font */
+    font-size: 16px; /* Change font size */
+}
+
+
+
+
+
+.definition strong {
+    font-weight: bold; /* Make strong text bold */
+}
+
+.logo {
+    text-align: left; /* Align the text to the left */
+    font-size: 36px; /* Set the font size */
+    color: transparent; /* Transparent color */
+    font-family: 'Georgia', serif; /* Example of an old-styled font */
+    font-weight: bold; /* Bold */
+    background-image: linear-gradient(to right, #bb3d21, #ff66669c); /* Gradient colors */
+    -webkit-background-clip: text; /* Apply gradient to text */
+    background-clip: text;
+    margin: 20px; /* Adjust the margin to move the logo nearer to the border */
+    margin-top: 50px; /* Add margin to the top */
+}
+
+
+.word-of-the-day-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.word-of-the-day-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.definition {
+
+    color: #BD4025; /* Change font color */
+}
+
+.word h3 {
+    font-size: 40px;
+    color: #BD4025;
+    font-family: 'EB Garamond', serif; /* Change font family to EB Garamond */
+    font-weight: 800; /* Set font weight to ExtraBold */
+    margin-left: 10px; /* Add margin to the left */
+    margin-bottom: 10px; /* Add margin to the left */
+
+
+
+
+}
+.definition p {
+    text-align: justify; /* Justify text */
+    text-indent: 1em; /* Set indentation */
+    white-space: pre-wrap; /* Wrap long lines */
+    word-wrap: break-word; /* Allow long words to break and wrap */
+    
+}
+
+
+
+.details p {
+    font-family: 'EB Garamond', serif; /* Change font family to EB Garamond */
+    font-size: 16px; /* Change font size */
+    color: #BD4025; /* Change font color */
+    word-spacing: 1px; /* Add spacing between words */
+    margin-left: 10px; /* Add margin to the left */
+
+}
+
+button {
+    margin-left: 10px; /* Add margin to the left */
+    margin-top: 10px; /* Add margin to the left */
+    margin-bottom: 10px; /* Add margin to the left */
+
+
+}
+
+
+/* Button hover effect */
+.search-box button:hover {
+    background-color: #ab9d6a; /* Change the background color on hover */
+    cursor: pointer; /* Change the cursor to pointer on hover */
+}
+
+/* CSS for recent searched words */
+.recent-searched-words {
+    margin-top: 200px; /* Increase margin-top to add more space */
+    margin-left: 50px; /* Increase margin-top to add more space */
+
+}
+
+.recent-searched-words h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #bb3d21;
+    font-family: 'Georgia', serif;
+}
+
+#recent-words-container {
+    list-style: none;
+    padding: 0;
+}
+
+#recent-words-container li {
+    font-size: 16px;
+    color: #bb3d21;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-family: 'Georgia', serif;
+    transition: color 0.3s ease;
+}
+
+#recent-words-container li:hover {
+    color: #ff6666;
+}
+
+/* CSS for word details */
+.word-details {
+    margin-top: 20px;
+}
+
+/* CSS for the footer */
+footer p {
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 115px;
+    margin-bottom: -10px;
+    background-color: #e1c490;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0; /* Position it at the bottom */
+    left: 0; /* Align it with the left edge of the screen */
+    right: 0; /* Align it with the right edge of the screen */
+}
+
+footer p {
+    font-size: 10px;
+}
+
+footer p span.coded-by {
+    color: #ec8c92;
+    font-size: 12px;
+    font-family: 'Pacifico', cursive;
+}
+
+footer p span.me {
+    color: #332b1d;
+    font-size: 14px;
+    font-family: 'Major Mono Display', monospace;
+    margin-left: 10px;
+}
+
+footer p span.SIA {
+    color: #bb3d21;
+    font-size: 20px;
+    font-family: 'Ysabeau SC', cursive;
+    font-weight: bold;
+}
+
+/* CSS for Word of the Day */
+
+
+
+.word-of-the-day-title {
+    font-size: 18px;
+    color: transparent;
+    font-family: 'Ysabeau SC', cursive;
+    background-image: linear-gradient(to right, #bb3d21, #ff6666);
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-top: 30px;
+
+
+}
+
+.error {
+    color: red;
+}
+
